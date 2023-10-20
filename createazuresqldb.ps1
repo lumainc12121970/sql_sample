@@ -3,7 +3,7 @@
 #2 Creating a credential to azure account
 $cred = $(New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList 'sqladmin', $(ConvertTo-SecureString -String 'p@$$w0rd' -AsPlainText -Force))
 
-#3 Creating a resource group
+#3 Creating a resource group and more
 New-AzureRmResourceGroup -Name AZURESQLGROUP2 -Location 'West US'
 $parameters = @{
     ResourceGroupName = 'AZURESQLGROUP2'
