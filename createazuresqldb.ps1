@@ -9,7 +9,8 @@ $parameters = @{
     ResourceGroupName = 'AZURESQLGROUP2'
     ServerName = 'azuresqlserver62'
     Location = 'West US'
-    SqlAdministratorCredentials = $cred
+    SqlAdministratorCredentials = $cred 
+    #test
 }
 New-AzureRmSqlServer @parameters
 
